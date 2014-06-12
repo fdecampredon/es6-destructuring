@@ -14,8 +14,7 @@ var RESULTS  = path.join(__dirname, 'tests/results');
 function transform(filename) {
     var recastOptions = {
         esprima: esprima,
-        sourceFileName: filename,
-        sourceMapName: filename + '.map'
+        sourceFileName: filename
     };
     
     var source = fs.readFileSync(path.join(BASELINE, filename));
@@ -24,7 +23,7 @@ function transform(filename) {
     ast = destrucuring.transform(ast);
     var result = recast.print(ast, recastOptions);
 
-    fs.writeFileSync(path.join(RESULTS, filename + '.js'), result.code, 'utf8');
+    fs.writeFileSync(path.join(RESULTS, filename), result.code, 'utf8');
 }
 
 fs.readdir(BASELINE, function (err, files) {
