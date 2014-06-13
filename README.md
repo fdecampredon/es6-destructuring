@@ -45,7 +45,7 @@ var x = z.x, y = z.y;
 ```
 
 ```
-$ es6-arrow-function $file
+$ es6-destructuring $file
 var x = z.x, y = z.y;
 ```
 
@@ -55,7 +55,7 @@ Browserify support is built in.
 
 ```
 $ npm install es6-destructuring  # install local dependency
-$ browserify -t es6-destructuring$file
+$ browserify -t es6-destructuring $file
 // BOILERPLATE
 var x = z.x, y = z.y;
 ```
