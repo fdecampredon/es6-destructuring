@@ -90,6 +90,7 @@ var x = arr[0], y = arr.slice(1);
 
 // with functions
 
-var x = (function(
-      {x},
-      {y}) { return x + y; })(12).x;
+var x = (function(arg$0, arg$1) {
+  var x = arg$0.x, y = arg$1.y;
+  return x + y;
+})(12).x;
