@@ -1,14 +1,26 @@
 {
   "name": "es6-destructuring",
   "version": "0.1.0",
-  "description": "",
+  "description": "es6 destructuring compiled to es3",
+  "bin": "bin/es6-destructuring",
   "main": "lib/index.js",
   "scripts": {
     "test": "node tests/runner.js",
     "generate": "node tests/runner.js --generate"
   },
-  "author": "",
-  "license": "BSD-2-Clause",
+  "directories": {
+    "test": "test"
+  },
+  "author": {
+    "name": "François de Campredon",
+    "email": "fdecampredon@kapit.fr",
+    "url": "https://github.com/fdecampredon/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fdecampredon/es6-destructuring.git"
+  },
+  "license": "Apache-2.0",
   "dependencies": {
     "recast": "~0.5.23",
     "through": "~2.3.4",
