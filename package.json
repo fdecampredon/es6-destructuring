@@ -1,10 +1,11 @@
 {
   "name": "es6-destructuring",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "node tests/runner.js"
+    "test": "node tests/runner.js",
+    "generate": "node tests/runner.js --generate"
   },
   "author": "",
   "license": "BSD-2-Clause",
