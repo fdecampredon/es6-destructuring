@@ -92,3 +92,8 @@ var [x,, ...y] = arr;
 var {x} = (function(
       {x},
       {y}) { return x + y; })(12);
+
+
+//empty pattern
+var {} = a;
+var [] = a;

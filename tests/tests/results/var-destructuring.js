@@ -94,3 +94,8 @@ var x = (function(arg$0, arg$1) {
   var x = arg$0.x, y = arg$1.y;
   return x + y;
 })(12).x;
+
+
+//empty pattern
+var var$5 = a;
+var var$6 = a;
