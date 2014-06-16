@@ -22,7 +22,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "recast": "~0.5.23",
+    "recast": "git://github.com/fdecampredon/recast.git",
     "through": "~2.3.4",
     "esprima": "git://github.com/ariya/esprima.git#harmony"
   }
