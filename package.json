@@ -5,8 +5,7 @@
   "bin": "bin/es6-destructuring",
   "main": "lib/index.js",
   "scripts": {
-    "test": "node tests/runner.js",
-    "generate": "node tests/runner.js --generate"
+    "test": "node test/runner.js"
   },
   "directories": {
     "test": "test"
@@ -25,5 +24,8 @@
     "recast": "git://github.com/fdecampredon/recast.git",
     "through": "~2.3.4",
     "esprima": "git://github.com/ariya/esprima.git#harmony"
+  },
+  "dependencies": {
+    "example-runner": "~0.1.0"
   }
 }
