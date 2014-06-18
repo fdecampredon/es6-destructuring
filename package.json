@@ -21,11 +21,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "recast": "git://github.com/fdecampredon/recast.git",
-    "through": "~2.3.4",
-    "esprima": "git://github.com/ariya/esprima.git#harmony"
-  },
-  "dependencies": {
-    "example-runner": "~0.1.0"
+    "example-runner": "~0.1.0",
+    "ast-util": "git://github.com/fdecampredon/ast-util.git"
   }
 }
