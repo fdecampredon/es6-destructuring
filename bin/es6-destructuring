@@ -7,6 +7,7 @@ function showUsage(code) {
     console.log('Options:');
     console.log();
     console.log('  -h, --help      prints this usage info');
+    console.log('  --noIterator    when using this options the transform will use index for array destructuring instead of iterator');
     console.log();
     console.log('Examples:');
     console.log();
@@ -25,6 +26,7 @@ module.exports = require('..');
 
 var run = module.exports.run = function run() {
     var inRawArgs = false;
+    var noIterator = false;
     var args = [];
 
     [].forEach.call(arguments, function(arg) {
@@ -38,7 +40,9 @@ var run = module.exports.run = function run() {
                 case '--help':
                     showUsage();
                     break;
-
+                case '--noIterator':
+                    noIterator = true;
+                    break;
                 default:
                     args.push(arg);
             }
@@ -63,7 +67,7 @@ var run = module.exports.run = function run() {
         }
         stream = process.stdin;
     }
-    stream.pipe(module.exports()).pipe(process.stdout);
+    stream.pipe(module.exports(null, { noIterator: noIterator })).pipe(process.stdout);
 };
 
 if (require.main === module) {
