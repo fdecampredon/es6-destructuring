@@ -23,8 +23,8 @@
   "dependencies": {
     "recast": "git://github.com/fdecampredon/recast",
     "esprima": "git://github.com/thomasboyt/esprima#4be906f1abcbb",
-    "ast-util": "git://github.com/fdecampredon/ast-util.git",
     "example-runner": "~0.1.0",
-    "through": "^2.3.4"
+    "through": "^2.3.4",
+    "ast-util": "~0.3.0"
   }
 }
