@@ -21,7 +21,10 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "recast": "^0.5.23",
+    "esprima": "git://github.com/thomasboyt/esprima#4be906f1abcbb",
+    "ast-util": "git://github.com/fdecampredon/ast-util.git",
     "example-runner": "~0.1.0",
-    "ast-util": "git://github.com/fdecampredon/ast-util.git"
+    "through": "^2.3.4"
   }
 }
