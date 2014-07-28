@@ -1,11 +1,11 @@
 /*jshint esnext:true*/
 /*global assert*/
-function simpleVarDestructuringOjectPattern(z) {
+function simpleVarDestructuringObjectPattern(z) {
     var [,x,,y] = z;
     return {
         x:x,
         y:y
     };
 }
-assert.deepEqual(simpleVarDestructuringOjectPattern([1,2,3,4,5]), {x: 2, y: 4}, 
+assert.deepEqual(simpleVarDestructuringObjectPattern([1,2,3,4,5]), {x: 2, y: 4},
              'ensure that array elision works');
