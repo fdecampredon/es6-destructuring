@@ -23,8 +23,10 @@
   "dependencies": {
     "recast": "^0.6.7",
     "esprima": "git://github.com/thomasboyt/esprima#4be906f1abcbb",
-    "example-runner": "~0.1.0",
     "through": "^2.3.4",
     "ast-util": "~0.3.0"
+  },
+  "devDependencies": {
+    "example-runner": "^0.2.0"
   }
 }
