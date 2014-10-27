@@ -1,7 +1,7 @@
 /**
  * We pull in example files from test/examples/*.js. Write your assertions in
- * the file alongside the ES6 class "setup" code. The node `assert` library
- * will already be in the context.
+ * the file alongside the ES6 "setup" code. The node `assert` library will
+ * already be in the context.
  */
 
 /*jshint node:true*/
