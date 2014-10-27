@@ -36,7 +36,7 @@ require('example-runner').runCLI(process.argv.slice(2), {
     };
 
     var ast = recast.parse(source, recastOptions);
-    ast = arrowFn.transform(ast);
+    ast = destructuring.transform(ast);
     var result = recast.print(ast, recastOptions);
 
     fs.writeFileSync(path.join(RESULTS, testName + '.js'), result.code, 'utf8');
