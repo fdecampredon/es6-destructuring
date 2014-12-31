@@ -22,8 +22,10 @@
   "license": "Apache-2.0",
   "dependencies": {
     "recast": "^0.8.0",
-    "example-runner": "~0.2.0",
     "through": "^2.3.6",
     "ast-util": "~0.5.2"
+  },
+  "devDependencies": {
+    "example-runner": "~0.2.0"
   }
 }
